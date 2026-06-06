@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>DLDCOM GAMES</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Bold Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">풍성한 수업을 위한 게임 포털</h1>
+    </header>
+
+    <main class="main-content">
+        <!-- 필터 버튼 영역 -->
+        <section class="filters">
+            <div class="filter-group" id="grade-filters">
+                <span class="filter-label">학년:</span>
+                <button class="filter-btn active" data-filter="all" data-category="grade">전체</button>
+                <button class="filter-btn" data-filter="전체" data-category="grade">공통</button>
+                <button class="filter-btn" data-filter="4학년" data-category="grade">4학년</button>
+            </div>
+            
+            <div class="filter-group" id="subject-filters">
+                <span class="filter-label">과목:</span>
+                <button class="filter-btn active" data-filter="all" data-category="subject">전체</button>
+                <button class="filter-btn" data-filter="국어/기타" data-category="subject">국어/기타</button>
+                <button class="filter-btn" data-filter="과학" data-category="subject">과학</button>
+                <button class="filter-btn" data-filter="창체" data-category="subject">창체</button>
+            </div>
+        </section>
+
+        <!-- 게임 카드 그리드 -->
+        <section class="game-grid" id="game-grid">
+            <!-- 자바스크립트로 카드가 렌더링 됩니다 -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 DLDCOM. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

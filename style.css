@@ -1,0 +1,205 @@
+/* Reset 및 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f0ea; /* 부드러운 베이지 배경 */
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #000;
+    line-height: 1.6;
+    min-height: 100dvh;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Header */
+.header {
+    background-color: #ff90e8;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #000;
+    box-shadow: 0 4px 0 #000;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Filters */
+.filters {
+    background-color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-label {
+    font-weight: 900;
+    font-size: 1rem;
+    min-width: 40px;
+}
+
+.filter-btn {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 #000;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.filter-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 #000;
+}
+
+.filter-btn:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0 #000;
+}
+
+.filter-btn.active {
+    background-color: #23a094;
+    color: #fff;
+}
+
+/* Game Grid */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+/* Game Card */
+.game-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000;
+    border: 4px solid #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0 #000;
+    transition: all 0.2s ease;
+    height: 100%;
+}
+
+.game-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0 #000;
+}
+
+.game-card:active {
+    transform: translate(6px, 6px);
+    box-shadow: 0px 0px 0 #000;
+}
+
+.card-image {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid #000;
+}
+
+.card-icon {
+    font-size: 4rem;
+}
+
+.card-content {
+    padding: 1.2rem;
+    background-color: #fff;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-breadcrumbs {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.5px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.card-desc {
+    font-size: 0.95rem;
+    color: #222;
+    margin-top: auto;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 4px solid #000;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .game-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .logo { font-size: 2rem; }
+    .filters { padding: 1rem; flex-direction: column; align-items: flex-start; }
+    .game-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .card-title { font-size: 1.1rem; }
+}
+
+@media (max-width: 400px) {
+    .game-grid { grid-template-columns: 1fr; }
+}
