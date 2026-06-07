@@ -49,6 +49,16 @@ const games = [
         type: '학습', 
         bgColor: '#ff90e8',
         image: 'images/handgame.webp'
+    },
+    {
+        titleInfo: { term: '테스트', subject: '기타', unit: '자동화', name: 'Test Deploy Site' },
+        description: '자동화 스크립트로 배포된 테스트 사이트',
+        url: 'https://test.dldcom.xyz',
+        grade: '전체',
+        subject: '기타',
+        type: '테스트',
+        bgColor: '#4caf50',
+        image: 'images/test_deploy_site.webp'
     }
 ];
 
