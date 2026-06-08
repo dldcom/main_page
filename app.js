@@ -49,6 +49,16 @@ const games = [
         type: '학습', 
         bgColor: '#ff90e8',
         image: 'images/handgame.webp'
+    },
+    { 
+        titleInfo: { term: '공통', subject: '창체', unit: '문화', name: '문화재 퍼즐' },
+        description: '자랑스러운 우리 문화재를 알아가는 퍼즐 게임',
+        url: 'https://moonhwa.dldcom.xyz', 
+        grade: '전체', 
+        subject: '창체', 
+        type: '퍼즐', 
+        bgColor: '#72D6C9',
+        image: 'images/moonhwa.png'
     }
 ];
 
