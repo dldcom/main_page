@@ -40,6 +40,16 @@ const games = [
         bgColor: '#90a8ed',
         image: 'images/science_4_1_3-3-.webp'
     },
+    {
+        titleInfo: { term: '4-1', subject: '과학', unit: '3단원', name: '화산과 화성암 관찰' },
+        description: '용암과 마그마가 식어 현무암과 화강암이 되는 과정을 관찰하는 활동',
+        url: 'https://science-4-1-3-4.dldcom.xyz',
+        grade: '4학년',
+        subject: '과학',
+        type: '관찰',
+        bgColor: '#ff6939',
+        image: 'images/science_4_1_3-4-.png'
+    },
     { 
         titleInfo: { term: '공통', subject: '창체', unit: '수어', name: '수어 학습 게임' },
         description: '간단한 수어를 단계별로 배우고 연습하는 게임',
