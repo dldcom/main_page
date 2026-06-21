@@ -51,6 +51,16 @@ const games = [
         image: 'images/science_4_1_3-4-.png'
     },
     { 
+        titleInfo: { term: '4-1', subject: '과학', unit: '4단원', name: '생물 관찰 현미경' },
+        description: '현미경을 조작하며 버섯, 해캄, 짚신벌레, 세균 표본을 관찰하는 시뮬레이션',
+        url: 'https://science-4-1-4-1.dldcom.xyz', 
+        grade: '4학년', 
+        subject: '과학', 
+        type: '시뮬레이션', 
+        bgColor: '#1e7b8f',
+        image: 'images/science_4_1_4-1-.webp'
+    },
+    { 
         titleInfo: { term: '공통', subject: '창체', unit: '수어', name: '수어 학습 게임' },
         description: '간단한 수어를 단계별로 배우고 연습하는 게임',
         url: 'https://hand.dldcom.xyz', 

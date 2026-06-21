@@ -16,6 +16,7 @@ const mapping = {
     'hanja.png': 'hanjagame.webp',
     'science1.png': 'science_4_1_3-1-.webp',
     'science3.png': 'science_4_1_3-3-.webp',
+    'science_4_1_4-1-.png': 'science_4_1_4-1-.webp',
     'hand.png': 'handgame.webp'
 };
 
