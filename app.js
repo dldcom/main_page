@@ -60,6 +60,16 @@ const games = [
         bgColor: '#1e7b8f',
         image: 'images/science_4_1_4-1-.webp'
     },
+    {
+        titleInfo: { term: '4-1', subject: '사회', unit: '2단원', name: '합리몰' },
+        description: '기준을 정하고 상품을 비교하며 합리적인 선택을 연습하는 쇼핑 시뮬레이션',
+        url: 'https://society-4-1-2-1.dldcom.xyz',
+        grade: '4학년',
+        subject: '사회',
+        type: '시뮬레이션',
+        bgColor: '#03c75a',
+        image: 'images/society_4_1_2-1-.png'
+    },
     { 
         titleInfo: { term: '공통', subject: '창체', unit: '수어', name: '수어 학습 게임' },
         description: '간단한 수어를 단계별로 배우고 연습하는 게임',
