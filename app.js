@@ -60,6 +60,16 @@ const games = [
         bgColor: '#1e7b8f',
         image: 'images/science_4_1_4-1-.webp'
     },
+    { 
+        titleInfo: { term: '4-1', subject: '과학', unit: '4단원', name: '미생물 우주 배양소' },
+        description: '미생물을 연구하고 합성해 행성을 개척하며 발효와 미생물의 쓰임을 배우는 탐사 게임',
+        url: 'https://science-4-1-4-2.dldcom.xyz', 
+        grade: '4학년', 
+        subject: '과학', 
+        type: '탐사 게임', 
+        bgColor: '#2a9d8f',
+        image: 'images/science_4_1_4-2-.webp'
+    },
     {
         titleInfo: { term: '4-1', subject: '사회', unit: '2단원', name: '합리몰' },
         description: '기준을 정하고 상품을 비교하며 합리적인 선택을 연습하는 쇼핑 시뮬레이션',
