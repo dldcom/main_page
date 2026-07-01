@@ -80,6 +80,16 @@ const games = [
         bgColor: '#03c75a',
         image: 'images/society_4_1_2-1-.png'
     },
+    {
+        titleInfo: { term: '4-1', subject: '사회', unit: '2단원', name: '생산과 소비 마을' },
+        description: '알바와 소비 활동을 하며 생산과 소비 개념을 익히는 RPG 마을 게임',
+        url: 'https://society-4-1-2-2.dldcom.xyz',
+        grade: '4학년',
+        subject: '사회',
+        type: 'RPG',
+        bgColor: '#f5c968',
+        image: 'images/society_4_1_2-2-.webp'
+    },
     { 
         titleInfo: { term: '공통', subject: '창체', unit: '수어', name: '수어 학습 게임' },
         description: '간단한 수어를 단계별로 배우고 연습하는 게임',
