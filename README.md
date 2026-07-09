@@ -66,5 +66,6 @@
 ## ⚙️ 실행 및 배포 환경
 
 - 별도의 백엔드 서버가 필요 없는 **순수 정적 웹사이트(Static Website)**입니다.
-- GitHub Pages, Cloudflare Pages, Vercel 등 정적 웹 호스팅 서비스에 폴더를 그대로 업로드하면 즉시 배포되어 작동합니다.
+- 기본 배포 대상은 **Cloudflare Pages**입니다. GitHub 저장소에 push하면 Cloudflare Pages가 자동으로 빌드/배포하도록 연결합니다.
+- Vite 프로젝트는 `npm run build` + `dist`, 정적 HTML 프로젝트는 build command 없이 output directory `.` 설정을 사용합니다.
 - 로컬 환경에서 테스트할 경우 `index.html` 파일을 브라우저로 직접 열거나, VSCode의 Live Server 확장 프로그램을 사용하여 확인할 수 있습니다.
