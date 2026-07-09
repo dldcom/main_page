@@ -35,6 +35,8 @@ GitHub는 코드 저장소로만 사용하고, 학생들이 접속하는 사이�
 
 ## 2. Cloudflare Pages 설정
 
+Cloudflare CLI(`wrangler`)로 직접 배포할 때 필요한 API 토큰은 프로젝트 루트의 `.env` 파일을 참고합니다. `.env`에는 실제 토큰 값이 들어 있으므로 저장소에 공개하지 않습니다.
+
 ### Vite / React 프로젝트
 
 `package.json`이 있고 `npm run build` 후 `dist` 폴더가 생기는 프로젝트는 아래처럼 설정합니다.
