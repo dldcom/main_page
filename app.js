@@ -20,6 +20,16 @@ const games = [
         bgColor: '#ffc900',
         image: 'images/hanjagame.webp' 
     },
+    {
+        titleInfo: { term: '4-1', subject: '수학', unit: '1단원', name: '부서진 별길' },
+        description: '이동·회전·뒤집기로 우주선 항로를 복구하는 우주 정거장 수학 게임',
+        url: 'https://math-starship.dldcom.xyz',
+        grade: '4학년',
+        subject: '수학',
+        type: '학습 게임',
+        bgColor: '#102d39',
+        image: 'images/math_4_1_1-starship.webp'
+    },
     { 
         titleInfo: { term: '4-1', subject: '과학', unit: '3단원', name: '생명의 강' },
         description: '침식·운반·퇴적 작용을 직접 체험해보는 시뮬레이션 게임',
