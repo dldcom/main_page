@@ -189,6 +189,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive */
+.site-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin-top: 0.75rem;
+}
+.site-nav a, .about-content a { color: #000; text-underline-offset: 0.25em; }
+a:focus-visible, button:focus-visible { outline: 3px solid #174fc4; outline-offset: 5px; }
+.site-nav a[aria-current="page"] { text-decoration-thickness: 3px; }
+.brand-label { font-size: 1.5rem; font-weight: 900; letter-spacing: 0.12em; }
+.about-content { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+.about-content p { font-weight: 400; overflow-wrap: anywhere; }
+.about-content .eyebrow { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.6rem; }
+.about-hero { padding: 2rem 0 3rem; max-width: 760px; }
+.about-hero h1 { font-size: clamp(2.1rem, 5vw, 3.8rem); line-height: 1.25; margin-bottom: 1.25rem; word-break: keep-all; }
+.about-hero > p:not(.eyebrow) { font-size: 1.1rem; }
+.about-content .about-button { display: inline-block; margin-top: 1.5rem; padding: 0.8rem 1.2rem; background: #ffc900; border: 3px solid #000; border-radius: 8px; box-shadow: 4px 4px 0 #000; font-weight: 700; text-decoration: none; }
+.about-section { margin: 0 0 2rem; }
+.about-section h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.4; margin-bottom: 1rem; word-break: keep-all; }
+.section-intro { margin-bottom: 1.5rem; }
+.featured-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.featured-product { background: #fff; border: 3px solid #000; border-radius: 12px; overflow: hidden; box-shadow: 5px 5px 0 #000; }
+.featured-product img { display: block; width: 100%; height: auto; aspect-ratio: 5 / 3; object-fit: cover; border-bottom: 3px solid #000; }
+.featured-body { padding: 1.25rem; }
+.featured-body h3 { font-size: 1.5rem; margin-bottom: 0.6rem; }
+.featured-body a { display: inline-block; margin-top: 1rem; font-weight: 700; }
+.roadmap, .english-summary { padding: 1.75rem; border: 3px solid #000; border-radius: 12px; margin-top: 3rem; background: #fff; }
+.roadmap { background: #e1f2ec; }
+.about-section p + p { margin-top: 1rem; }
+.status-note { font-size: 0.9rem; }
+.english-summary h2 { font-family: 'Noto Sans KR', sans-serif; font-weight: 900; }
+.resource-links { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1rem; }
+@media (max-width: 700px) {
+    .featured-grid { grid-template-columns: 1fr; }
+    .about-content { padding-left: 1rem; padding-right: 1rem; }
+    .roadmap, .english-summary { padding: 1.25rem; }
+}
+
 @media (max-width: 900px) {
     .game-grid { grid-template-columns: repeat(3, 1fr); }
 }
