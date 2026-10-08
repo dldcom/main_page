@@ -1,49 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>DLDCOM GAMES</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for Bold Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header">
-        <h1 class="logo">풍성한 수업을 위한 게임 포털</h1>
-    </header>
-
-    <main class="main-content">
-        <!-- 필터 버튼 영역 -->
-        <section class="filters">
-            <div class="filter-group" id="grade-filters">
-                <span class="filter-label">학년:</span>
-                <button class="filter-btn active" data-filter="all" data-category="grade">전체</button>
-                <button class="filter-btn" data-filter="전체" data-category="grade">공통</button>
-                <button class="filter-btn" data-filter="4학년" data-category="grade">4학년</button>
-            </div>
-            
-            <div class="filter-group" id="subject-filters">
-                <span class="filter-label">과목:</span>
-                <button class="filter-btn active" data-filter="all" data-category="subject">전체</button>
-                <button class="filter-btn" data-filter="국어/기타" data-category="subject">국어/기타</button>
-                <button class="filter-btn" data-filter="수학" data-category="subject">수학</button>
-                <button class="filter-btn" data-filter="과학" data-category="subject">과학</button>
-                <button class="filter-btn" data-filter="사회" data-category="subject">사회</button>
-                <button class="filter-btn" data-filter="창체" data-category="subject">창체</button>
-            </div>
-        </section>
-
-        <!-- 게임 카드 그리드 -->
-        <section class="game-grid" id="game-grid">
-            <!-- 자바스크립트로 카드가 렌더링 됩니다 -->
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>© 2026 DLDCOM. All rights reserved.</p>
-    </footer>
-
-    <script src="app.js?v=20260727"></script>
-</body>
-</html>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>DLDCOM — 교실을 위한 플레이</title><meta name="description" content="초등교사가 직접 만드는 학습 게임과 시뮬레이션. 수업에 맞는 교육자료를 찾아보세요.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css?v=20261008">
+</head><body>
+<a class="skip-link" href="#library">학습 게임으로 건너뛰기</a>
+<header class="site-header"><div class="header-inner">
+<a class="brand" href="index.html" aria-label="DLDCOM 홈"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span>DLDCOM<span class="brand-caption">CLASSROOM TOOLS</span></a>
+<nav class="site-nav" aria-label="주요 메뉴"><a href="index.html" aria-current="page">학습 게임</a><a href="about.html">프로젝트 소개</a><a class="nav-external" href="https://github.com/dldcom">GitHub ↗</a></nav>
+</div></header>
+<main>
+<section class="portal-hero container" aria-labelledby="hero-title">
+<div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> MADE FOR THE CLASSROOM</p><h1 id="hero-title">배움에,<br>플레이를 더하다<span class="heading-dot">.</span></h1><p class="hero-description">직접 움직이고, 탐색하고, 발견하는 수업.<br>초등교사가 만든 학습 게임으로 시작해 보세요.</p><a class="button button-primary" href="#library">수업에 맞는 게임 찾기 <span aria-hidden="true">↓</span></a><div class="hero-meta"><span>웹에서 바로 실행</span><span>학년·과목별 탐색</span></div></div>
+<a class="hero-feature" href="https://math-starship.dldcom.xyz" target="_blank" rel="noopener noreferrer"><div class="feature-topline"><span>FEATURED EXPERIENCE</span><span aria-hidden="true">↗</span></div><div class="feature-copy"><span class="feature-subject">4학년 수학 · 도형의 이동</span><h2>부서진 별길</h2><p>움직이고, 돌리고, 뒤집으며<br>우주선의 항로를 복구하세요.</p></div><img src="images/math_4_1_1-starship.webp" alt="우주 정거장에서 도형을 움직이는 부서진 별길 게임" width="900" height="540" fetchpriority="high"><div class="feature-bottom"><span>게임 살펴보기</span><span aria-hidden="true">→</span></div></a>
+</section>
+<section class="library container" id="library" aria-labelledby="library-title">
+<div class="section-heading"><div><p class="eyebrow">EXPLORE THE COLLECTION</p><h2 id="library-title">오늘 수업에는 어떤 게임이 좋을까요?</h2></div><p class="result-count" id="game-count" aria-live="polite"></p></div>
+<div class="filters" aria-label="학습 게임 필터">
+<div class="filter-group" id="grade-filters"><span class="filter-label">학년</span><div class="filter-options"><button class="filter-btn active" data-filter="all" data-category="grade" aria-pressed="true">전체</button><button class="filter-btn" data-filter="전체" data-category="grade" aria-pressed="false">공통</button><button class="filter-btn" data-filter="4학년" data-category="grade" aria-pressed="false">4학년</button></div></div>
+<div class="filter-group" id="subject-filters"><span class="filter-label">과목</span><div class="filter-options"><button class="filter-btn active" data-filter="all" data-category="subject" aria-pressed="true">전체</button><button class="filter-btn" data-filter="국어/기타" data-category="subject" aria-pressed="false">국어/기타</button><button class="filter-btn" data-filter="수학" data-category="subject" aria-pressed="false">수학</button><button class="filter-btn" data-filter="과학" data-category="subject" aria-pressed="false">과학</button><button class="filter-btn" data-filter="사회" data-category="subject" aria-pressed="false">사회</button><button class="filter-btn" data-filter="창체" data-category="subject" aria-pressed="false">창체</button></div></div>
+</div><div class="game-grid" id="game-grid"></div><noscript><p class="empty-state">게임 목록을 보려면 JavaScript를 활성화해 주세요. <a href="about.html">프로젝트 소개에서 대표 게임을 확인할 수도 있습니다.</a></p></noscript>
+</section>
+<aside class="project-note container"><div><p class="eyebrow">FROM AN EDUCATOR, FOR EDUCATORS</p><h2>교실의 아이디어가<br>하나의 도구가 되기까지.</h2></div><div><p>DLDCOM은 초등교사가 직접 만드는 독립 교육 소프트웨어 프로젝트입니다. 더 풍성한 배움의 경험을 위한 도구를 하나씩 만들어 갑니다.</p><a class="text-link" href="about.html">프로젝트 이야기 읽기 →</a></div></aside>
+</main>
+<footer class="site-footer container"><div><a class="footer-brand" href="index.html">DLDCOM</a><p>작은 플레이, 더 넓은 배움.</p></div><div class="footer-links"><a href="mailto:hello@dldcom.xyz">hello@dldcom.xyz</a><a href="https://github.com/dldcom">GitHub ↗</a><span>© 2026 DLDCOM</span></div></footer>
+<script src="app.js?v=20261008"></script></body></html>
