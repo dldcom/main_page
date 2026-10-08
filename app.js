@@ -141,9 +141,10 @@ function init() {
 // 게임 카드 렌더링 함수
 function renderGames(gamesToRender) {
     gameGrid.innerHTML = '';
+    document.getElementById('game-count').textContent = `${gamesToRender.length}개의 학습 게임`;
     
     if (gamesToRender.length === 0) {
-        gameGrid.innerHTML = '<div style="grid-column: 1 / -1; text-align: center; font-weight: 700; padding: 3rem; background: #fff; border: 4px solid #000; box-shadow: 6px 6px 0 #000; border-radius: 10px;">해당하는 게임이 없습니다.</div>';
+        gameGrid.innerHTML = '<div class="empty-state"><strong>아직 이 조합의 게임은 없어요.</strong>학년이나 과목을 전체로 바꾸어 다른 자료를 둘러보세요.</div>';
         return;
     }
 
@@ -151,6 +152,7 @@ function renderGames(gamesToRender) {
         const card = document.createElement('a');
         card.href = game.url;
         card.target = '_blank'; // 새 창에서 열기
+        card.rel = 'noopener noreferrer';
         card.className = 'game-card';
         
         card.innerHTML = `
@@ -190,10 +192,14 @@ function setupEventListeners() {
 function updateActiveButtons(category, clickedBtn) {
     // 해당 카테고리의 모든 버튼에서 active 제거
     const categoryBtns = document.querySelectorAll(`.filter-btn[data-category="${category}"]`);
-    categoryBtns.forEach(btn => btn.classList.remove('active'));
+    categoryBtns.forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+    });
     
     // 클릭된 버튼에 active 추가
     clickedBtn.classList.add('active');
+    clickedBtn.setAttribute('aria-pressed', 'true');
 }
 
 // 필터 적용 로직
